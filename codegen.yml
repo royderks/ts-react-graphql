@@ -1,0 +1,12 @@
+overwrite: true
+schema: "https://50m91p16rp.sse.codesandbox.io/"
+documents: "src/**/*.graphql"
+generates:
+  src/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
