@@ -2,26 +2,30 @@ import React from "react";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
 
-// interface GetProducts {
-//   products: any;
-//   data: {
-//     products: Product[];
-//   };
-// }
+interface GetProducts {
+  products: any;
+  data: {
+    products: Product[];
+  };
+}
 
-// interface Product {
-//   id: any;
-//   title: any;
-//   thumbnail: any;
-//   offers: any;
-// }
+interface Product {
+  id: string;
+  title: string;
+  offers: Offer[];
+}
+
+interface Offer {
+  id: string;
+  reseller: string;
+  price: string;
+}
 
 export const GET_PRODUCTS_QUERY = gql`
   query getProducts {
     products {
       id
       title
-      thumbnail
       offers {
         reseller
         price
@@ -31,21 +35,21 @@ export const GET_PRODUCTS_QUERY = gql`
 `;
 
 export default () => (
-  <Query query={GET_PRODUCTS_QUERY}>
+  <Query<GetProducts, {}> query={GET_PRODUCTS_QUERY}>
     {({ loading, data }) => {
       if (loading) return <p>Loading...</p>;
 
       return (
         <ul>
           {data &&
-            data.products.map(({ id, title, offers }) => {
+            data.products.map(({ id, title, offers }: Product) => {
               return (
                 <div key={id}>
                   <h3>{title}</h3>
                   <ul>
-                    {offers.map((offer, index) => (
-                      <li key={index}>
-                        {offer.reseller} - {`€ ${offer.price}`}
+                    {offers.map(({ id, reseller, price }: Offer) => (
+                      <li key={id}>
+                        {reseller} - {`€ ${price}`}
                       </li>
                     ))}
                   </ul>
