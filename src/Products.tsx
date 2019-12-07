@@ -36,21 +36,23 @@ export default () => (
       if (loading) return <p>Loading...</p>;
 
       return (
-        data &&
-        data.products.map(({ id, title, offers }) => {
-          return (
-            <div key={id}>
-              <h3>{title}</h3>
-              <ul>
-                {offers.map((offer: any, index: any) => (
-                  <li key={index}>
-                    {offer.reseller} - {`€ ${offer.price}`}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          );
-        })
+        <ul>
+          {data &&
+            data.products.map(({ id, title, offers }) => {
+              return (
+                <div key={id}>
+                  <h3>{title}</h3>
+                  <ul>
+                    {offers.map((offer: any, index: any) => (
+                      <li key={index}>
+                        {offer.reseller} - {`€ ${offer.price}`}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
+        </ul>
       );
     }}
   </Query>

@@ -1,0 +1,11 @@
+query GetProducts {
+  products {
+    id
+    title
+    thumbnail
+    offers {
+      reseller
+      price
+    }
+  }
+}
