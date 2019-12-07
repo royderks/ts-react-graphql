@@ -43,7 +43,7 @@ export default () => (
                 <div key={id}>
                   <h3>{title}</h3>
                   <ul>
-                    {offers.map((offer: any, index: any) => (
+                    {offers.map((offer, index) => (
                       <li key={index}>
                         {offer.reseller} - {`€ ${offer.price}`}
                       </li>
