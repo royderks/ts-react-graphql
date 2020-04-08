@@ -4,6 +4,7 @@ query GetProducts {
     title
     thumbnail
     offers {
+      id
       reseller
       price
     }

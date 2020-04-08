@@ -11,11 +11,11 @@
       {
         "kind": "OBJECT",
         "name": "Query",
-        "description": "",
+        "description": null,
         "fields": [
           {
             "name": "products",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -39,11 +39,11 @@
           },
           {
             "name": "product",
-            "description": "",
+            "description": null,
             "args": [
               {
                 "name": "id",
-                "description": "",
+                "description": null,
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -77,11 +77,11 @@
       {
         "kind": "OBJECT",
         "name": "Product",
-        "description": "",
+        "description": null,
         "fields": [
           {
             "name": "id",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -97,7 +97,7 @@
           },
           {
             "name": "title",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -113,7 +113,7 @@
           },
           {
             "name": "thumbnail",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -129,7 +129,7 @@
           },
           {
             "name": "thumbnailName",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -145,7 +145,7 @@
           },
           {
             "name": "reviews",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -161,7 +161,7 @@
           },
           {
             "name": "offers",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -212,11 +212,11 @@
       {
         "kind": "OBJECT",
         "name": "Review",
-        "description": "",
+        "description": null,
         "fields": [
           {
             "name": "productId",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -232,7 +232,7 @@
           },
           {
             "name": "count",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -244,7 +244,7 @@
           },
           {
             "name": "average",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -273,11 +273,11 @@
       {
         "kind": "OBJECT",
         "name": "Offer",
-        "description": "",
+        "description": null,
         "fields": [
           {
             "name": "productId",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -293,7 +293,7 @@
           },
           {
             "name": "id",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -309,7 +309,7 @@
           },
           {
             "name": "reseller",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -325,7 +325,7 @@
           },
           {
             "name": "price",
-            "description": "",
+            "description": null,
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -348,15 +348,15 @@
       {
         "kind": "OBJECT",
         "name": "Mutation",
-        "description": "",
+        "description": null,
         "fields": [
           {
             "name": "addOffer",
-            "description": "",
+            "description": null,
             "args": [
               {
                 "name": "input",
-                "description": "",
+                "description": null,
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -383,11 +383,11 @@
           },
           {
             "name": "addProductOffer",
-            "description": "",
+            "description": null,
             "args": [
               {
                 "name": "productId",
-                "description": "",
+                "description": null,
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -401,7 +401,7 @@
               },
               {
                 "name": "reseller",
-                "description": "",
+                "description": null,
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -415,7 +415,7 @@
               },
               {
                 "name": "price",
-                "description": "",
+                "description": null,
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -449,12 +449,12 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "OfferInput",
-        "description": "",
+        "description": null,
         "fields": null,
         "inputFields": [
           {
             "name": "productId",
-            "description": "",
+            "description": null,
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -468,7 +468,7 @@
           },
           {
             "name": "reseller",
-            "description": "",
+            "description": null,
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -482,7 +482,7 @@
           },
           {
             "name": "price",
-            "description": "",
+            "description": null,
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -1308,20 +1308,20 @@
       {
         "kind": "ENUM",
         "name": "CacheControlScope",
-        "description": "",
+        "description": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
         "enumValues": [
           {
             "name": "PUBLIC",
-            "description": "",
+            "description": null,
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
             "name": "PRIVATE",
-            "description": "",
+            "description": null,
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -1340,37 +1340,6 @@
       }
     ],
     "directives": [
-      {
-        "name": "cacheControl",
-        "description": "",
-        "locations": [
-          "FIELD_DEFINITION",
-          "OBJECT",
-          "INTERFACE"
-        ],
-        "args": [
-          {
-            "name": "maxAge",
-            "description": "",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Int",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "scope",
-            "description": "",
-            "type": {
-              "kind": "ENUM",
-              "name": "CacheControlScope",
-              "ofType": null
-            },
-            "defaultValue": null
-          }
-        ]
-      },
       {
         "name": "skip",
         "description": "Directs the executor to skip this field or fragment when the `if` argument is true.",

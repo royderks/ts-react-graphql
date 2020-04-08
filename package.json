@@ -40,11 +40,11 @@
     ]
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^1.9.1",
-    "graphql": "^14.5.8",
-    "@graphql-codegen/typescript": "0.1.0",
-    "@graphql-codegen/typescript-operations": "0.1.0",
-    "@graphql-codegen/typescript-react-apollo": "0.1.0",
-    "@graphql-codegen/introspection": "0.1.0"
+    "@graphql-codegen/cli": "^1.13.2",
+    "@graphql-codegen/introspection": "^0.1.0",
+    "@graphql-codegen/typescript": "^0.1.0",
+    "@graphql-codegen/typescript-operations": "^0.1.0",
+    "@graphql-codegen/typescript-react-apollo": "^0.1.0",
+    "graphql": "^14.5.8"
   }
 }
